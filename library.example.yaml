@@ -1,0 +1,29 @@
+# Copy this file to library.yaml and fill in your own entries.
+#
+# DOWNLOADS_DIR and BASE_DIR are set via environment variables:
+#   DOWNLOADS_DIR=/path/to/your/completed/downloads
+#   BASE_DIR=/path/to/your/media/library
+#
+# Movies are linked to:   BASE_DIR/Movies/<title>/<title>.<ext>
+# TV shows are linked to: BASE_DIR/TV Shows/<title>/Season XX/<title> SXXEXX.<ext>
+#
+# Optional fields:
+#   magnet        — magnet link to re-download if the file is lost or corrupted
+#   skip_subtitles — skip .srt files (useful when subtitles are embedded or unwanted)
+
+movies:
+  - title: "Example Movie (2020)"
+    path: "Example.Movie.2020.1080p.WEB-DL.x264"
+    magnet: "magnet:?xt=urn:btih:0000000000000000000000000000000000000000"
+  - title: "Another Movie (2019)"
+    path: "Another.Movie.2019.2160p.BluRay.HEVC"
+
+tv_shows:
+  - title: "Example Show (2021)"
+    path: "Example.Show.S01.COMPLETE.1080p.WEB-DL"
+    magnet: "magnet:?xt=urn:btih:0000000000000000000000000000000000000001"
+  - title: "Example Show (2021)"
+    path: "Example.Show.S02.COMPLETE.1080p.WEB-DL"
+  - title: "Another Show (2022)"
+    path: "Another.Show.S01.1080p.WEBRip"
+    skip_subtitles: true
